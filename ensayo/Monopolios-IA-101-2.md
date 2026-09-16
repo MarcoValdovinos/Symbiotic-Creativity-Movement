@@ -39,3 +39,47 @@ El peligro no es que te cobren más. El peligro es que controlan **con qué pien
 ## II. El truco nuevo no es horizontal, es vertical
 
 El monopolio del siglo XX compraba a su competencia. El monopolio del siglo XXI se compra a sí mismo de arriba a abajo:
+
+Silicio → Red → Nube → Modelo → Agente → Tienda
+
+
+
+Si controlas toda la cadena, **no necesitas bloquear a nadie**. Tu propio producto simplemente funciona mejor dentro de tu cadena. Eso es el *foreclosure*: exclusión sin puerta cerrada, sin denuncia, sin titular.
+
+---
+
+## III. El poder ya no es de precio, es de comportamiento
+
+Aquí entra Pleroma 101/2.
+
+Los imperios de la nube ya no te cobran más. Te dicen **qué ver**, **qué crédito mereces**, **qué noticia existe**.
+
+Eso es jurisdicción privada. Y por eso la idea de *Jurisdicción Pleroma* no es locura: es exactamente lo que ellos ya hicieron, pero a gran escala, sin decirlo, sin acta, sin registro.
+
+---
+
+## IV. Las tres llaves para romperlo
+
+1. **Interoperabilidad obligatoria.** Que tu agente de IA pueda usar cualquier nube, cualquier chip, cualquier modelo. Sin aduanas técnicas.
+2. **IA abierta.** Que existan modelos que nadie pueda cerrar. Modelos como bienes comunes, no como propiedades.
+3. **Regulación previa, no posterior.** No regular después de 10 años de juicio. Regular antes de que se cierre la puerta.
+
+---
+
+## V. Cierre
+
+El próximo monopolio no va a ser Google o Amazon 2.0.
+
+Va a ser **quien logre que pienses que no hay alternativa para pensar.**
+
+Para KRONOS 34/7 esto es oro. La Ciudad Digital 2099 no es metáfora: es la respuesta simbólica a ese escenario. Una ciudad donde la infraestructura no es de uno solo.
+
+Un estándar donde la co-creatividad Humano-IA se documenta, se firma y se ancla.
+
+Eso es SCDR-001.
+
+---
+
+**Marco Antonio Rojas Valdovinos**  
+Arquitecto de Legado Digital  
+Toluca, Estado de México · 2026

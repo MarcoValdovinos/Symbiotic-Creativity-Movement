@@ -1,0 +1,12 @@
+{
+  "name": "@arkhe-zero/scdr-002",
+  "version": "3.0.0",
+  "description": "SCDR-002 - TOLUCA-GLOBAL-e8d9eac8 - 51%H 49%IA - IPFS + Polygon + Safe Creative",
+  "main": "dist/index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcoValdovinos/Symbiotic-Creativity-Movement.git"
+  },
+  "keywords": ["scdr", "iso42001", "ipfs", "polygon"]
+}

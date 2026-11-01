@@ -1,52 +1,50 @@
 #!/usr/bin/env python3
-# ARKHE SENTINEL - Rastrea donde se escucha el movimiento
-import requests, json, datetime
+import requests, json, datetime, os
 
 REPO = "MarcoValdovinos/Symbiotic-Creativity-Movement"
-TOKEN = "" # pon tu GH_TOKEN si quieres datos privados
 
 print(f"=== ARKHE ZERO SENTINEL {datetime.datetime.now().isoformat()} ===")
 print(f"Repo: {REPO}")
 
-# 1. 【entity-GitHub¦canonical_name=GitHub】 Stats publicos
-try:
-    r = requests.get(f"https://api.github.com/repos/{REPO}")
-    data = r.json()
-    print(f"\n[【entity-GitHub¦canonical_name=GitHub】]")
-    print(f"Stars: {data['stargazers_count']}")
-    print(f"Forks: {data['forks_count']}")
-    print(f"Watchers: {data['watchers_count']}")
-    print(f"Open Issues: {data['open_issues_count']}")
-    print(f"Template: {data['is_template']}")
-    print(f"Updated: {data['updated_at']}")
-except Exception as e:
-    print(f"Error GitHub: {e}")
+# 【entity-GitHub¦canonical_name=GitHub】 public
+r = requests.get(f"https://api.github.com/repos/{REPO}")
+data = r.json()
+print(f"\n[【entity-GitHub¦canonical_name=GitHub】]")
+print(f"Stars: {data['stargazers_count']} | Forks: {data['forks_count']} | Watchers: {data['watchers_count']}")
+print(f"Template: {data['is_template']} | Updated: {data['updated_at'][:10]}")
 
-# 2. Releases
-try:
-    r = requests.get(f"https://api.github.com/repos/{REPO}/releases")
-    rel = r.json()
-    print(f"\n[Releases] {len(rel)} versiones")
-    for rel_item in rel[:3]:
-        print(f"- {rel_item['tag_name']}: {rel_item['name']} - {rel_item['published_at'][:10]}")
-except Exception as e:
-    print(f"Error releases: {e}")
+# Releases
+r = requests.get(f"https://api.github.com/repos/{REPO}/releases")
+rel = r.json()
+print(f"\n[Releases] {len(rel)}")
+for ri in rel[:5]:
+    print(f"- {ri['tag_name']}: {ri['name'][:50]}")
 
-# 3. Branches / Bifurcaciones
-try:
-    r = requests.get(f"https://api.github.com/repos/{REPO}/branches")
-    branches = r.json()
-    print(f"\n[Bifurcaciones] {len(branches)} ramas")
-    for b in branches:
-        print(f"- {b['name']}")
-except Exception as e:
-    print(f"Error branches: {e}")
+# Branches
+r = requests.get(f"https://api.github.com/repos/{REPO}/branches")
+branches = r.json()
+print(f"\n[Bifurcaciones] {len(branches)} ramas")
+for b in branches:
+    print(f"- {b['name']}")
 
-# 4. Cloudflare check
+# Cloudflare
 try:
     r = requests.get("https://arkhe-auth.legadodigitalkronos.workers.dev", timeout=5)
-    print(f"\n[Cloudflare] Status: {r.status_code} - {len(r.text)} bytes")
+    print(f"\n[Cloudflare] LIVE Status {r.status_code} - {len(r.text)} bytes")
 except Exception as e:
     print(f"\n[Cloudflare] Error: {e}")
 
-print("\n=== FIN SENTINEL ===")
+# 【entity-Mercado Pago¦canonical_name=Mercado Pago】
+print(f"\n[【entity-Mercado Pago¦canonical_name=Mercado Pago】 LIVE]")
+print(f"- Diagnostico $99: https://mpago.la/2YZb7VW")
+print(f"- Bronce $149: https://mpago.la/2NZ5fFL")
+print(f"- Plata $399: https://mpago.la/2EZNjPh")
+print(f"- Oro $799: https://mpago.la/2ngaKaE")
+print(f"- Platino $1499: https://mpago.la/2BAwmts")
+
+# Guarda historial
+os.makedirs("tools/sentinel/history", exist_ok=True)
+with open(f"tools/sentinel/history/{datetime.date.today()}.json", "w") as f:
+    json.dump({"date": str(datetime.date.today()), "stars": data['stargazers_count'], "forks": data['forks_count'], "branches": len(branches)}, f)
+
+print("\n=== FIN SENTINEL - Donde se escucha ARKHE ZERO ===")

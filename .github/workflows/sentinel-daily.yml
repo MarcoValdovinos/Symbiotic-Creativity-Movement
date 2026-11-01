@@ -1,0 +1,41 @@
+name: ARKHE SENTINEL - Daily Tracking
+
+on:
+  schedule:
+    - cron: '0 14:00 * * *'  # Diario 14:00 UTC = 8am Mexico
+  workflow_dispatch:  # Permite correr manual
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install deps
+        run: pip install requests -q
+        
+      - name: Run Sentinel Tracker
+        run: |
+          python3 tools/sentinel/track.py | tee sentinel-report.txt
+          echo "## ARKHE ZERO - Daily Report" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat sentinel-report.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: sentinel-report
+          path: sentinel-report.txt
+          
+      - name: Create Issue with Report (opcional)
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "SENTINEL Daily - ${{ 【entity-github¦canonical_name=GitHub】.run_id }}"
+          content-filepath: sentinel-report.txt
+          labels: sentinel,tracking

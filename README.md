@@ -1,9 +1,9 @@
 # Symbiotic Creativity Movement
-### Estandar SCDR-001 | 51% Humano / 49% IA - TOLUCA-GLOBAL-e8d9eac8
+### Estandar SCDR-001 | TOLUCA-GLOBAL-e8d9eac8 | 51%H 49%IA
 
-Calcula, certifica y ancla tu autoria original.
+API LIVE: SCDR-TOLUCA-GLOBAL-ed13d0a6 - 73% Humano certificado
 
 Portal: /apps/portal/voz-original.html
-API: POST /api/v1/calculate -> SCDR-TOLUCA-GLOBAL-ed13d0a6 LIVE
+API: POST /api/v1/calculate
 
-Quick-Start: python server.py -> localhost:3002
+Quick-Start: python server.py

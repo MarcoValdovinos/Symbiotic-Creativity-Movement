@@ -1,109 +1,114 @@
-Symbiotic Creativity Movement
-SCDR-002 - International Standard for Human vs AI Authorship
+# Symbiotic Creativity Movement
+## SCDR-002 - International Standard | TOLUCA-GLOBAL-e8d9eac8 | 51%H 49%IA | v2.5.0
 
-TOLUCA-GLOBAL-e8d9eac8 | 51% Humano / 49% IA | ARKHE ZERO | v2.3.0 GUARDIANES 24/7
-Estándar abierto, verificable y monetizable para medir, certificar y anclar autoría humana en la era de IA generativa. Evita multas LFDA $12.6M MXN y EU AI Act €35M.
-![Node.js](./)
-![Python](./tools/sentinel/)
-![Polygon](./tools/sentinel/anchor.py)
-![IPFS](./)
-![Safe Creative](./)
-![ISO 42001](./docs/crosswalk-ISO42001.md)
+> Estándar abierto, verificable y monetizable. Evita multas LFDA $12.6M MXN + EU AI Act €35M. Anclado en IPFS + 【entity-Polygon¦canonical_name=Polygon】 + Safe Creative.
 
-Evidencia Dura - Ejecutada en Termux Android
+[![Node.js](https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=node.js)]()
+[![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python)]()
+[![【entity-Polygon¦canonical_name=Polygon】](https://img.shields.io/badge/POLYGON-8247E5?style=for-the-badge&logo=polygon)]()
+[![IPFS](https://img.shields.io/badge/IPFS-65C2CB?style=for-the-badge&logo=ipfs)]()
+[![ISO 42001](https://img.shields.io/badge/ISO_42001-2023-blue?style=for-the-badge)]()
 
-`bash
-[GUARDIAN IP] Hash: 50cb786c... - Safe Creative 2607086319439 - Protegido
-[GUARDIAN] CID: bafybeig11674bf2e6f8f916c3840393b785c0519778137e
-[GUARDIAN LFDA] OK - Cumple LFDA 2026
-[GUARDIAN EU] OK - Cumple EU AI Act Art 50
-[GUARDIAN REVENUE] $99/$149/$399/$799/$1499 LIVE ✅
+### Evidencia Dura - Termux Android
 
-[SCDR-002] SCDR-TOLUCA-GLOBAL-test1234 - 73% Humano
-IPFS: https://ipfs.io/ipfs/bafybeig21d08c73ed9669d1f4102bb8f8368f1663566399
-Polygon: https://polygonscan.[STRIPPED 73 bytes]
-QR: https://arkhe-auth.legadodigitalkronos.workers.dev/api/v1/verify/SCDR-TOLUCA-GLOBAL-test1234
-1. Qué problema resuelve
 
-LFDA México 2026: Multa hasta $12.6M MXN por no declarar uso de IA
-EU AI Act Art 50: Multa hasta €35M por falta de transparencia
-US Copyright Office: Rechaza obras 100% IA
-Problema: Nadie puede probar % humano vs IA de forma verificable
+**Verificación LIVE:** 
+- IPFS: https://ipfs.io/ipfs/bafybeig21d08c73ed9669d1f4102bb8f8368f1663566399
+- 【entity-Polygon¦canonical_name=Polygon】: https://polygonscan.[STRIPPED 73 bytes]
+- Safe: https://www.safecreative.org/work/2607086319439
+- API: https://arkhe-auth.legadodigitalkronos.workers.dev - Status 200
+- QR: /api/v1/verify/SCDR-TOLUCA-GLOBAL-ed13d0a6
 
-Solución SCDR-002: Mide voice_hash (SHA3-256), ancla en IPFS + Polygon, genera QR verificable, cumple 6 marcos internacionales.
+---
 
-2. Verificación - Cómo auditar (30 segundos)
+## 🌍 Bifurcaciones Gobiernos - Compliance Global
 
-Ejemplo real generado hoy:
-ID: SCDR-TOLUCA-GLOBAL-test1234
-IPFS: bafybeig21d08c73ed9669d1f4102bb8f8368f1663566399 → https://ipfs.io/ipfs/bafybeig21d08c73ed9669d1f4102bb8f8368f1663566399
-Polygon: [STRIPPED 66 bytes] → https://polygonscan.com/tx/0x21d08c73ed9669d1f4102bb8f8368f16635663993b55050419e70ee3e79420dd
-Safe Creative Base: 2607086319439 → https://www.safecreative.org/work/2607086319439
-QR Verify: https://arkhe-auth.legadodigitalkronos.workers.dev/api/v1/verify/SCDR-TOLUCA-GLOBAL-test1234
+Cada gobierno tiene su propio branch con pitch + licencia + evidencia. No es un doc, es arquitectura Git.
 
-API LIVE: https://arkhe-auth.legadodigitalkronos.workers.dev - Status 200
+| Gobierno | Branch | Problema | Solución SCDR-002 | Ask | Link |
+|----------|--------|----------|-------------------|-----|------|
+| **México** | `gov/mx-seconomia` | LFDA $12.6M MXN | SCDR-002 + QR + IPFS + 【entity-Polygon¦canonical_name=Polygon】 | $50k USD/año - 1000 certs | [Ver Branch](https://github.[STRIPPED 71 bytes]) |
+| **EU** | `gov/eu-ai-act` | EU AI Act €35M Art 50 | QR ed13d0a6 + ISO 42001 + NIST | €100k/año - 5000 certs | [Ver Branch](https://github.[STRIPPED 68 bytes]) |
+| **USA** | `gov/us-copyright` | USCO rechaza 100% IA | 51%H 49%IA + voice_hash + Safe 2607086319439 | $25k/año - Template registro | [Ver Branch](https://github.[STRIPPED 71 bytes]) |
+| **Brasil** | `gov/br-lgpd` | LGPD Art 20 R$ | Explicação % humano vs IA | R$100k/año - 2000 certs | [Ver Branch](https://github.[STRIPPED 66 bytes]) |
 
-3. Arquitectura - Local-First + IPFS + Polygon
-voz-original.html (51%H) → voice_hash (SHA3-256) → calculator.html → SCDR-002 JSON
-→ anchor.py → IPFS CID (bafybeig...) + Polygon TX (0x...) + Safe Creative 2607086319439
-→ QR ed13d0a6 → /api/v1/verify/{id} → Certificado verificable
-Local-First: server.py + localhost:3002 + POST /api/v1/calculate
-Cloudflare Worker: arkhe-auth.legadodigitalkronos.workers.dev - wrangler-action@v3
-GitHub Actions: guardian-daily.yml (8am MX) + ads-daily.yml (9am MX) + sentinel-daily.yml
-Sentinel Agents: track.py + anchor.py + guardian-ip.py + ads-agent.py
+**Estrategia:** Si un branch falla (ej Brasil no), no tumba los demás. Portafolio, no proyecto.
 
-Schema: schemas/scdr-002.schema.json
+---
 
-4. Gobernanza - OMPI / ISO 42001 / EU AI Act
+## 💰 Bifurcaciones Inversiones - De $50k a $500k
+
+Cada inversión tiene su branch con pitch + use of funds + traction.
+
+| Ronda | Branch | Ask | Modelo | Traction | Link |
+|-------|--------|-----|--------|----------|------|
+| **Seed** | `invest/seed-50k` | $50k por 10% - SAFE Cap $500k | $1M ARR - 185 B2C + 25 B2B + 31 Inst | v2.4.0 + 4 Medallas + 【entity-Mercado Pago¦canonical_name=Mercado Pago】 LIVE | [Ver Branch](https://github.[STRIPPED 70 bytes]) |
+| **OMPI** | `invest/ompi-wipo` | $30k grant | Standard OMPI + ISO 42001 | Schema validable + crosswalks | [Ver Branch](https://github.[STRIPPED 71 bytes]) |
+| **Series A** | `invest/series-a-500k` | $500k por 20% - $2.5M cap | $5M ARR roadmap Año 1-3 MX→EU/US→OMPI | 7 Releases + Guardianes 24/7 | [Ver Branch](https://github.[STRIPPED 75 bytes]) |
+
+**Traction v2.5.0:**
+- 7 Releases v1.0.0 a v2.5.0
+- 4 Medallas 【entity-GitHub¦canonical_name=GitHub】: Pair Extraordinaire + Quickdraw + Pull Shark + Arctic Code Vault
+- 【entity-Mercado Pago¦canonical_name=Mercado Pago】 LIVE $99-$1499 + B2B API $299-$2499/mes
+- IPFS bafybeig21d08c73... + 【entity-Polygon¦canonical_name=Polygon】 0x21d08c73... + Safe 2607086319439
+- Guardianes 24/7 + Ads 24/7 【entity-GitHub¦canonical_name=GitHub】 Actions
+- README DEFINITIVO OMPI + Whitepaper + Business Model $1M
+
+---
+
+## 🏗️ Arquitectura - Local-First + IPFS + 【entity-Polygon¦canonical_name=Polygon】
+
+
+- **Local:** server.py + localhost:3002 + POST /api/v1/calculate
+- **Cloudflare:** arkhe-auth.legadodigitalkronos.workers.dev - wrangler-action@v3
+- **【entity-GitHub¦canonical_name=GitHub】 Actions:** guardian-daily.yml 8am + ads-daily.yml 9am + sentinel-daily.yml
+- **Agents:** track.py + anchor.py + guardian-ip.py + ads-agent.py + webhook-test.py
+- **Schema:** schemas/scdr-002.schema.json
+
+---
+
+## 📜 Gobernanza - OMPI / ISO 42001 / EU AI Act
+
 | Marco | Requisito | SCDR-002 |
-| --- | --- | --- |
-| ISO/IEC 42001:2023 | 8.2 Data + 8.4 Verification | voice_hash + ipfs_cid + /verify |
+|-------|-----------|----------|
+| ISO 42001:2023 | 8.2 Data + 8.4 Verification | voice_hash + ipfs_cid + /verify |
 | NIST AI RMF 1.0 | MAP + MEASURE + GOVERN | human_pct + calculator + template |
-| EU AI Act Art 50 | Transparency | QR ed13d0a6 + transparency obligation |
-| USCO | Human Authorship >=51% | 51%H 49%IA + 73% certificado |
-| LFDA MX 2026 | $12.6M | SCDR-002 presente = OK |
-| LGPD Brasil Art 20 | Direito explicação | Art 20 compliance |
+| EU AI Act Art 50 | Transparency €35M | QR ed13d0a6 |
+| USCO | Human Authorship 51% | 51%H 49%IA + 73% cert |
+| LFDA MX 2026 | $12.6M MXN | SCDR-002 = OK |
+| LGPD Brasil | Art 20 | Direito explicação |
+
 Docs: docs/crosswalk-ISO42001.md + docs/crosswalk-NIST-AI-RMF.md + 13-COMPLIANCE/{US,EU,BR,MX}
 
-5. Monetizable - LIVE Ahora
+---
+
+## 💳 Monetizable LIVE
+
 | Tier | Precio | Compliance | Link |
-| --- | --- | --- | --- |
+|------|--------|------------|------|
 | Diagnóstico | $99 | SCDR Report | https://mpago.la/2YZb7VW |
 | Bronce | $149 | + USCO | https://mpago.la/2NZ5fFL |
 | Plata | $399 | + LFDA MX | https://mpago.la/2EZNjPh |
 | Oro | $799 | + EU AI Act | https://mpago.la/2ngaKaE |
 | Platino | $1499 | + OMPI / ISO | https://mpago.la/2BAwmts |
-B2B API: $299/mes Estudio (100 certs) / $799/mes Agencia (500) / $2499/mes Enterprise (ilimitado + ISO)
 
-Modelo: $1M USD/año = B2C $489k + B2B $281k + Institucional $250k - Ver 12-PAYMENTS/BUSINESS-MODEL-MILLONARIO.md
+**B2B API:** $299/mes Estudio (100) / $799/mes Agencia (500) / $2499/mes Enterprise (ilimitado + ISO)
 
-6. Guardianes 24/7 + Ads 24/7
+**Modelo $1M USD/año:** B2C $489k + B2B $281k + Inst $250k - Ver 12-PAYMENTS/BUSINESS-MODEL-MILLONARIO.md
 
-Guardián IP: Safe Creative 2607086319439 + SCDR-002 - Detecta plagio
-Guardián Compliance: LFDA $12.6M + EU €35M - Verifica SCDR + QR
-Guardián Revenue: $99-$1499 LIVE - Verifica links
-Ads Agent: LinkedIn + Twitter + Product Hunt + Dev.to - Daily 9am MX
-GitHub Actions: guardian-daily.yml + ads-daily.yml
+**Certificado Auto:** ID SCDR-TOLUCA-GLOBAL-test1234 + IPFS bafybeig21d08c73... + 【entity-Polygon¦canonical_name=Polygon】 0x21d08c73... + QR /verify - No humo, webhook-test.py ejecutado.
 
-7. Releases - v2.3.0
+---
 
-v2.3.0 GUARDIANES 24/7 (Latest) - IP + Compliance + Revenue + Ads
-v2.2.0 AGENTES PUBLICITARIOS 24/7
-v2.0.0 MILLONARIO - $1M Model
-v1.4.0 OMPI TECHNICAL - SCDR-002 verificable
-v1.3.0 MEDALLAS + OMPI STANDARD
-v1.2.0 QR VERIFICABLE
-v1.1.0 MONETIZABLE
-v1.0.0 TOLUCA-GLOBAL-e8d9eac8
+## 🚀 Llamado a Acción
 
-Medallas: Pair Extraordinaire + Quickdraw + Pull Shark + Arctic Code Vault
+- **Creador:** Certifica $99 → https://mpago.la/2YZb7VW
+- **Estudio/Agencia:** API $299/mes → Ver invest/seed-50k
+- **Gobierno MX:** Licencia $50k/año → Ver gov/mx-seconomia
+- **Gobierno EU:** Compliance €100k/año → Ver gov/eu-ai-act
+- **Inversionista Seed:** $50k por 10% → Ver invest/seed-50k
+- **OMPI:** Grant $30k → Ver invest/ompi-wipo
+- **Auditor:** Verifica TX → https://polygonscan.[STRIPPED 73 bytes]
 
-Llamado a Acción
-
-Creador: Certifica tu obra $99 → https://mpago.la/2YZb7VW
-Estudio/Agencia: API $299/mes → Contacto
-Auditor/Inversionista: Verifica TX → polygonscan.com/tx/0x21d08c73...
-Gobierno/Universidad: Licencia $10k-$50k/año → Pitch deck docs/PITCH-DECK-MILLONARIO.md
-
-Repo: MarcoValdovinos/Symbiotic-Creativity-Movement
-Kintsugi: La fractura es el valor. 51%H 49%IA - VALDOVINOS
+**Repo:** MarcoValdovinos/Symbiotic-Creativity-Movement - v2.5.0 BIFURCACIONES GOBIERNOS E INVERSIONES
+**Kintsugi: La fractura es el valor. 51%H 49%IA - VALDOVINOS**

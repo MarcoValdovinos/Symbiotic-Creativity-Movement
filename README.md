@@ -93,3 +93,10 @@
 
 **Verifica en:** `https://arkhe-auth.legadodigitalkronos.workers.dev/api/v1/verify/SCDR-TOLUCA-GLOBAL-ed13d0a6`
 
+
+---
+
+### 🔍 Verifica tu Sello SCDR-001
+**ID:** SCDR-TOLUCA-GLOBAL-ed13d0a6 | 73% Humano Certificado
+![QR SCDR ed13d0a6](12-PAYMENTS/qr-ed13d0a6.png)
+**Verifica en:** https://arkhe-auth.legadodigitalkronos.workers.dev/api/v1/verify/SCDR-TOLUCA-GLOBAL-ed13d0a6

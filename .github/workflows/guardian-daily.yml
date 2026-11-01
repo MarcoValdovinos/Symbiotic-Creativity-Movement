@@ -1,0 +1,19 @@
+name: Guardian Daily - ARKHE ZERO
+on:
+  schedule:
+    - cron: '0 14 * * *'
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+jobs:
+  guardian:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python tools/sentinel/guardian-ip.py
+          python tools/sentinel/ads-agent.py
+          python tools/sentinel/track.py
+          python tools/sentinel/anchor.py

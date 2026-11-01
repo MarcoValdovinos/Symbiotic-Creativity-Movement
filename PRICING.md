@@ -1,40 +1,35 @@
-# 💰 Precios y Planes
+# Pricing - Symbiotic Creativity Movement
+### SCDR-001 | TOLUCA-GLOBAL-e8d9eac8
 
-## 🎯 Productos
+#### 🎯 10 Fundadores LATAM - $49 USD (GRATIS hoy con testimonio)
 
-### 1. Certificaciones (Pago Único)
-| Nivel | MXN | USD | Beneficios |
-|-------|-----|-----|------------|
-| 🥉 Bronce | $2,500 | $150 | Sello digital + listado público |
-| 🥈 Plata | $5,000 | $300 | + Auditoría básica + soporte |
-| 🥇 Oro | $10,000 | $600 | + Auditoría completa + prioridad |
-| 💎 Platino | $25,000 | $1,500 | + Consultoría + acceso a DAO |
+**Incluye:**
+- Certificación SCDR-001 con sello `ed13d0a6` LIVE
+- Bóveda `mi-boveda.arkh` ML-KEM-768
+- Anclaje IPFS + GitHub timestamp
+- Entrada a data-room privado
 
-### 2. Membresías DAO (Suscripción)
-| Plan | MXN/mes | USD/mes | Beneficios |
-|------|---------|---------|------------|
-| Básica | $500 | $30 | Voto en SIPs + comunidad |
-| Premium | $2,000 | $120 | + Consultoría mensual + prioridad |
+**Cómo obtenerlo GRATIS:**
+1. Graba voz en /apps/portal/voz-original.html
+2. Calcula tu obra en calculator.html
+3. Publica en IG: "Certifiqué 73% humano con SCDR-001 @SymbioticCreativity #TOLUCA-GLOBAL"
 
-### 3. Servicios Profesionales
-| Servicio | MXN | USD |
-|----------|-----|-----|
-| Consultoría (1 hora) | $3,000 | $180 |
-| Auditoría de IA | $15,000 | $900 |
-| Implementación de estándar | $50,000 | $3,000 |
-| Capacitación empresarial | $25,000 | $1,500 |
+**Paga $49 y únete ahora:**
 
-## 💳 Métodos de Pago
-- **LATAM:** Mercado Pago
-- **Global:** Stripe
-- **Cripto:** ETH, USDC, USDT, DAI
-- **Token nativo:** $SYMBIO
+<!-- OPCION 1: Stripe Payment Link (recomendado) -->
+[🔒 Pagar $49 con Stripe](https://buy.stripe.com/test_49fundador) <- Reemplaza con tu link de Stripe Dashboard -> Products -> Payment Links
 
-## 🎁 Descuentos
-- **Early Adopters:** 50% descuento (primeros 100 clientes)
-- **Miembros DAO:** 20% descuento permanente
-- **ONGs y Educación:** 70% descuento
+<!-- OPCION 2: 【entity-PayPal¦canonical_name=PayPal】 -->
+[💳 Pagar $49 con 【entity-PayPal¦canonical_name=PayPal】](https://www.paypal.com/paypalme/TU_USUARIO/49) <- Reemplaza TU_USUARIO
 
-## 📞 Contacto para Ventas
-- **Email:** marco.a.rojas.v@hotmail.com
-- **Calendly:** [Agendar consultoría]
+<!-- OPCION 3: Crypto / Celo (para tu 12-PAYMENTS) -->
+Wallet: `0x...TOLUCA...` (USDT en Polygon)
+
+---
+#### Planes Futuros (después de 10 fundadores)
+
+- **Free:** 3 certs/mes
+- **Creator $49/mes:** 100 certs + API key `sk-scdr-live-...`
+- **Studio $199/mes:** 1000 certs + auditoría humana + soporte LFDA
+
+Contacto: marco@arkhe.zero | https://marcovaldovinos.github.io/Symbiotic-Creativity-Movement/diagnostico.html

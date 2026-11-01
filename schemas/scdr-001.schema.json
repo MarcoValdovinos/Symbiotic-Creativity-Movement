@@ -1,0 +1,15 @@
+{
+  "title": "SCDR-001 Certificate",
+  "type": "object",
+  "required": ["id", "human_pct", "ai_pct"],
+  "properties": {
+    "id": {"type": "string"},
+    "human_pct": {"type": "number"},
+    "ai_pct": {"type": "number"},
+    "voice_hash": {"type": "string"},
+    "timestamp": {"type": "string"},
+    "chain_anchor": {"type": "string"},
+    "lifecycle": {"type": "string", "enum": ["ORIGINAL_ONLY", "DERIVATIVE_LICENSED"]},
+    "lfd_compliance": {"type": "boolean"}
+  }
+}

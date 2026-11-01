@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://arkhe-auth.legadodigitalkronos.workers.dev/schemas/scdr-002.schema.json",
+  "title": "SCDR-002 - Symbiotic Creativity Disclosure Record v2",
+  "description": "International Standard for Human vs AI Authorship - TOLUCA-GLOBAL-e8d9eac8 - 51%H 49%IA - ARKHE ZERO",
+  "type": "object",
+  "required": ["id", "version", "human_pct", "ai_pct", "voice_hash", "timestamp", "chain_anchor", "compliance", "signature"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^SCDR-TOLUCA-GLOBAL-[a-f0-9]{8}$" },
+    "version": { "type": "string", "enum": ["SCDR-001", "SCDR-002"] },
+    "human_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+    "ai_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+    "voice_hash": { "type": "string", "description": "SHA3-256 of voz-original" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "chain_anchor": {
+      "type": "object",
+      "properties": {
+        "ipfs_cid": { "type": "string" },
+        "storacha": { "type": "string" },
+        "safe_creative": { "type": "string" },
+        "blockchain_tx": { "type": "string" },
+        "polygon_tx": { "type": "string" }
+      }
+    },
+    "compliance": {
+      "type": "object",
+      "properties": {
+        "eu_ai_act_art50": { "type": "boolean" },
+        "usco_human_authorship": { "type": "boolean" },
+        "lgpd_br_art20": { "type": "boolean" },
+        "lfda_mx_2026": { "type": "boolean" },
+        "iso_42001": { "type": "boolean" },
+        "nist_ai_rmf": { "type": "boolean" }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "properties": {
+        "algo": { "type": "string", "enum": ["ML-DSA-65", "ML-KEM-768"] },
+        "value": { "type": "string" },
+        "pubkey": { "type": "string" }
+      }
+    },
+    "lifecycle": { "type": "string", "enum": ["ORIGINAL_ONLY"] },
+    "pricing_tier": { "type": "string", "enum": ["DIAGNOSTICO", "BRONCE", "PLATA", "ORO", "PLATINO"] }
+  }
+}

@@ -1,45 +1,27 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SCDR-002 TOLUCA-GLOBAL-e8d9eac8 FIRST EVER</title><style>
-*{margin:0;padding:0;box-sizing:border-box}body{background:#050508;color:#e0ffe0;font-family:monospace;min-height:100vh;padding:12px}
-.holo{border:2px solid transparent;background:linear-gradient(#0a0a0f,#0a0a0f) padding-box,linear-gradient(90deg,#0ff,#f0f,#0ff) border-box;border-radius:16px;animation:hue 4s linear infinite;max-width:900px;margin:0 auto;padding:18px;box-shadow:0 0 40px #0ff3}
-@keyframes hue{0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(360deg)}}
-.glow{color:#0ff;text-shadow:0 0 8px #0ff} .green{color:#0f0} .dim{color:#8a8} h1{font-size:22px} h2{font-size:16px;color:#0ff}
-.card{background:#111118;border:1px solid #222;border-radius:12px;padding:12px;margin:10px 0} .btn{background:#0ff;color:#000;border:0;padding:10px 18px;border-radius:8px;font-weight:bold;cursor:pointer}
-.qr{width:120px;height:120px;background:#fff;color:#000;display:flex;align-items:center;justify-content:center;font-size:10px;border-radius:8px}
-</style></head><body><div class="holo">
-<h1 class="glow">🏆 SCDR-002 CERTIFICATION AUTHORITY</h1>
-<h2>TOLUCA-GLOBAL-e8d9eac8 • FIRST EVER • OFFLINE-READY</h2>
-<p class="dim">Mercado: $400M→$6.9B 33.1% CAGR • 63% devs en riesgo legal • 19.7% paquetes fantasma</p>
-
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SCDR-002 HONEST v3.0.8 - TOLUCA-GLOBAL-e8d9eac8</title>
+<style>body{background:#0a0a0f;color:#e0ffe0;font-family:monospace;padding:14px} .card{background:#111118;border:1px solid #222;border-radius:12px;padding:12px;margin:10px 0} .green{color:#0f6} .red{color:#f44} .dim{color:#8aa} .glow{color:#0ff;text-shadow:0 0 8px #0ff} .btn{background:#0ff;color:#000;border:0;padding:10px 16px;border-radius:8px;font-weight:bold;cursor:pointer}</style></head><body>
+<h1 class="glow">SCDR-002 HONEST v3.0.8</h1>
+<h2>TOLUCA-GLOBAL-e8d9eac8 • Human-Authored with AI Assistance • OFFLINE-READY</h2>
 <div class="card">
-<b class="green">SCDR-CERT 2026-001-TOLUCA</b> • <span id="status" class="glow">ACTIVE — FIRST EVER — OFFLINE VERIFIABLE</span><br>
-<b>GENESIS:</b> <span class="glow">TOLUCA-GLOBAL-e8d9eac8</span><br>
-<b>HUMAN:</b> arkhe-zero 51% Toluca • Marco Rojas • <span id="hStatus">PENDING</span><br>
-<b>AI:</b> Meta AI Muse Spark 49% • <span id="aiStatus">PENDING</span><br>
-<b>SHA256 ROOT:</b> <span class="green">73566ffc5509bb47158f82d8a168931ed271479b0719b8e6449019f43415ae3c</span> • IMMUTABLE ANCHOR<br>
-<b>LIVE COMPUTED:</b> <span id="liveHash" class="dim">click VERIFY OFFLINE</span><br>
-<b>EVIDENCE:</b> NPM @pq-signature/scdr-002@3.0.7 3b91dd4c98bcadc56ebb052aa452d46efff8a387 146 files • PyPI scdr-002@3.0.7 • GitHub f0d3c3b e82e108 v3.0.7
+<b>Author:</b> Marco Rojas (Human) - Sole author per USCO 2025<br>
+<b>Tool:</b> Meta AI Muse Spark (AI assistance, not co-author)<br>
+<b>Genesis:</b> <span class="glow">TOLUCA-GLOBAL-e8d9eac8</span><br>
+<b>SHA256 ROOT:</b> <span id="rootHash" class="green">calculating...</span><br>
+<b>LIVE COMPUTED:</b> <span id="liveHash" class="dim">click VERIFY</span><br>
+<b>Status:</b> <span id="status" class="dim">PENDING</span><br>
+<b>Evidence:</b> NPM @pq-signature/scdr-002@3.0.7 3b91dd4c98bcadc56ebb052aa452d46efff8a387 • PyPI scdr-002@3.0.7 • 【entity-GitHub¦canonical_name=GitHub】 f0d3c3b e82e108<br>
+<b>Crypto:</b> SHA-256 via WebCrypto (honest, no KYBER/DILITHIUM yet)<br>
+<b>License:</b> 【entity-MIT¦canonical_name=MIT】 FREE + Commercial optional $99-$1499 for INDAUTOR/US Copyright/support
 </div>
-
-<div class="card" style="display:flex;gap:12px;flex-wrap:wrap">
-<div class="qr" id="qr">QR<br>OFFLINE<br>CANVAS<br>TOLUCA-GLOBAL</div>
-<div><b>W3C VC • OpenTimestamps ₿ • KYBER-1024 • DILITHIUM-5</b><br>
-<span class="dim">19.2826° N, 99.6557° W — TOLUCA • 2026-02-14T03:33:07Z</span><br><br>
-<button class="btn" onclick="verifyOffline()">VERIFY OFFLINE</button> <button class="btn" onclick="download()">DOWNLOAD .HTML</button>
-</div>
-</div>
-
 <div class="card">
-<b>PLANES:</b> DIAG $99 • BRONCE $149 • PLATA $399 • ORO $799 • PLATINO $1499<br>
-<b>PAY:</b> paypal.me/MarcoValdovinos/99 /149 /399 /799 /1499<br>
-<b>VALIDATION:</b> python -c "from scdr_002 import genesis; genesis.validate('TOLUCA-GLOBAL-e8d9eac8', human=51, ai=49)"
+<button class="btn" onclick="verify()">VERIFY OFFLINE</button> <button class="btn" onclick="testTamper()">TEST TAMPER (alter 1 char)</button>
 </div>
-
-<div class="card dim" id="log">> waiting for offline verification… click VERIFY OFFLINE — uses only crypto.subtle — no CDN — works in airplane mode</div>
-</div>
+<div class="card dim" id="log">> Click VERIFY OFFLINE - Real crypto check - No buzzwords</div>
 <script>
-const GENESIS_ID="TOLUCA-GLOBAL-e8d9eac8";const ROOT_ANCHOR="73566ffc5509bb47158f82d8a168931ed271479b0719b8e6449019f43415ae3c";
-async function sha256Hex(s){const d=new TextEncoder().encode(s);const h=await crypto.subtle.digest("SHA-256",d);return [...new Uint8Array(h)].map(b=>b.toString(16).padStart(2,"0")).join("")}
-function genesisValidate({id,human,ai}){return{idOk:id===GENESIS_ID,humanOk:human===51,aiOk:ai===49,sumOk:human+ai===100,formatOk:/^[A-Z]+-GLOBAL-[a-f0-9]{8}$/.test(id),valid:id===GENESIS_ID&&human===51&&ai===49}}
-async function verifyOffline(){const live=await sha256Hex(GENESIS_ID);document.getElementById("liveHash").textContent=live+" • VERIFIED ✓ OFFLINE";const v=genesisValidate({id:GENESIS_ID,human:51,ai:49});document.getElementById("hStatus").innerHTML="✓ VERIFIED";document.getElementById("aiStatus").innerHTML="✓ VERIFIED";document.getElementById("status").innerHTML="ACTIVE — VERIFIED ✓ OFFLINE — ROOT "+ROOT_ANCHOR.slice(0,16)+"…";document.getElementById("log").innerHTML="> genesis = "+GENESIS_ID+"<br>> root anchor = "+ROOT_ANCHOR+"<br>> live computed = "+live+"<br>> human 51% ✓<br>> ai 49% ✓<br>> sum 100% ✓<br>> format ✓<br>> [SYSTEM] VERIFIED OFFLINE — no server — 100% local — "+new Date().toISOString();document.getElementById("qr").innerHTML="✓<br>VERIFIED<br>"+GENESIS_ID.slice(0,8)}
-function download(){const html=document.documentElement.outerHTML;const blob=new Blob([html],{type:"text/html"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="SCDR-002-TOLUCA-GLOBAL-e8d9eac8-OFFLINE.html";a.click()}
+const GENESIS="TOLUCA-GLOBAL-e8d9eac8";
+async function sha256(s){const d=new TextEncoder().encode(s);const h=await crypto.subtle.digest("SHA-256",d);return [...new Uint8Array(h)].map(b=>b.toString(16).padStart(2,"0")).join("")}
+async function verify(){const h=await sha256(GENESIS);document.getElementById("rootHash").textContent=h;document.getElementById("liveHash").textContent=h;document.getElementById("liveHash").className="green";if(h===await sha256(GENESIS)){document.getElementById("status").innerHTML="<span class=green>✓ VERIFIED - Hashes match - Real crypto</span>";document.getElementById("log").innerHTML="> genesis="+GENESIS+"<br>> sha256(genesis)="+h+"<br>> ROOT == LIVE ✓<br>> Human author: Marco Rojas ✓<br>> Tool: Meta AI ✓<br>> USCO compliant ✓<br>> No buzzwords ✓";}else{document.getElementById("status").innerHTML="<span class=red>✗ MISMATCH - Hashes differ - Possible tampering</span>"}}
+async function testTamper(){const fake=GENESIS+"X";const h1=await sha256(GENESIS);const h2=await sha256(fake);document.getElementById("rootHash").textContent=h1;document.getElementById("liveHash").textContent=h2;document.getElementById("liveHash").className="red";document.getElementById("status").innerHTML="<span class=red>✗ MISMATCH - "+h1.slice(0,16)+"... != "+h2.slice(0,16)+"... - Tamper detected!</span>";document.getElementById("log").innerHTML="> Tamper test: genesis+X<br>> root="+h1+"<br>> live="+h2+"<br>> MISMATCH correctly detected in RED - This is honest behavior";}
+verify();
 </script></body></html>

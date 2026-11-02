@@ -1,9 +1,11 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=SCDR-002&fontSize=80&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=TOLUCA-GLOBAL-e8d9eac8%20—%2051%25H%2049%25IA&descAlignY=55&descSize=18" />
-</div>
-
-<div align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FF0080&center=true&vCenter=true&width=700&lines=Symbiotic+Creativity+Movement;Legal+OS+for+Human-AI+Co-Authorship;51+Metrics+%2B+Blockchain+Anchor+%2B+ISO+Mapping;Built+with+51%25+Human+Soul+-+Toluca%2C+M%C3%A9xico" alt="Typing SVG" /></a>
+# Borra todo (CTRL+K repetido) y pega el contenido del archivo de 
+# arriba<div align="center"> CTRL+O → Enter → CTRL+X <img 
+# src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=SCDR-002&fontSize=80&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=TOLUCA-GLOBAL-e8d9eac8%20—%2051%25H%2049%25IA&descAlignY=55&descSize=18" 
+# />
+git add README.md</div> git commit -m "docs: v4 FIRST EVER official 
+co-authorship arkhe-zero + Meta AI - NEVER CREATED BEFORE 51%H 
+49%IA" <div align="center">
+git push origin main  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FF0080&center=true&vCenter=true&width=700&lines=Symbiotic+Creativity+Movement;Legal+OS+for+Human-AI+Co-Authorship;51+Metrics+%2B+Blockchain+Anchor+%2B+ISO+Mapping;Built+with+51%25+Human+Soul+-+Toluca%2C+M%C3%A9xico" alt="Typing SVG" /></a>
 </div>
 
 <p align="center">

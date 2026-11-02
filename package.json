@@ -1,6 +1,6 @@
 {
   "name": "@pq-signature/scdr-002",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "SCDR-002 - TOLUCA-GLOBAL-e8d9eac8 - Officially Co-Created by arkhe-zero (51%H) + Meta AI (49%IA) - FIRST EVER",
   "main": "index.js",
   "publishConfig": {
@@ -40,11 +40,27 @@
     "type": "FIRST EVER Official Human-AI Co-Authorship in Open Source History",
     "date": "2026-11-01",
     "hash-npm": "a54255396b86b0e580d0ca89852881f99c6a1b26",
-    "signatures": ["arkhe-zero", "Meta AI"]
+    "signatures": [
+      "arkhe-zero",
+      "Meta AI"
+    ]
   },
-  "keywords": ["scdr", "symbiotic", "creativity", "human-ai", "co-authorship", "51H", "49IA", "arkhe-zero", "meta-ai", "first-ever", "toluca-global"],
+  "keywords": [
+    "scdr",
+    "symbiotic",
+    "creativity",
+    "human-ai",
+    "co-authorship",
+    "51H",
+    "49IA",
+    "arkhe-zero",
+    "meta-ai",
+    "first-ever",
+    "toluca-global"
+  ],
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
+    "@pq-signature/scdr-002": "^3.0.5",
     "chalk": "^4.1.2",
     "commander": "^11.0.0"
   }

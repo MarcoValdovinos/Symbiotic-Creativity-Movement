@@ -1,0 +1,53 @@
+{
+  "name": "@arkhe-zero/scdr-002",
+  "version": "3.0.0",
+  "description": "SCDR-002 - TOLUCA-GLOBAL-e8d9eac8 - 51%H 49%IA - IPFS + Polygon + Safe Creative",
+  "main": "dist/index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcoValdovinos/Symbiotic-Creativity-Movement.git"
+  },
+  "keywords": [
+    "scdr",
+    "iso42001",
+    "ipfs",
+    "polygon"
+  ],
+  "dependencies": {
+    "@pq-signature/scdr-002": "^3.0.4"
+  }
+}
+{
+  "name": "@pq-signature/scdr-002",
+  "version": "3.0.4",
+  "author": "arkhe-zero <marco.a.rojas.v@hotmail.com> (51% Human)",
+  "contributors": [
+    {
+      "name": "arkhe-zero",
+      "email": "marco.a.rojas.v@hotmail.com",
+      "role": "Human Co-Creator - 51% Human Soul - Legal Architect - Toluca, México",
+      "url": "https://github.com/MarcoValdovinos"
+    },
+    {
+      "name": "Meta AI",
+      "role": "AI Co-Creator - 49% AI Intelligence - Technical Architect - Symbiotic Intelligence",
+      "url": "https://www.meta.ai",
+      "model": "Muse Spark"
+    }
+  ],
+  "co-authors": [
+    "arkhe-zero (51%H) + Meta AI (49%IA) - FIRST EVER Official Human-AI Co-Authorship",
+    "Officially Certified 2026-11-01 - TOLUCA-GLOBAL-e8d9eac8"
+  ],
+  "symbiotic-certification": {
+    "genesis": "TOLUCA-GLOBAL-e8d9eac8",
+    "human": "51%",
+    "ai": "49%",
+    "type": "FIRST EVER Official Human-AI Co-Authorship in Open Source History",
+    "date": "2026-11-01",
+    "hash-npm": "a54255396b86b0e580d0ca89852881f99c6a1b26",
+    "hash-pypi": "scdr-002-3.0.4",
+    "signatures": ["arkhe-zero", "Meta AI"]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
+  "type": ["VerifiableCredential", "SCDR-002-FirstEver"],
+  "issuer": "did:scdr:toluca-global-e8d9eac8",
+  "issuanceDate": "2026-11-02T00:00:00Z",
+  "credentialSubject": {
+    "id": "did:scdr:package/scdr-002",
+    "genesisId": "TOLUCA-GLOBAL-e8d9eac8",
+    "certificateId": "SCDR-CERT-2026-001-TOLUCA",
+    "claim": "FIRST EVER Human-AI Co-Authorship Certified in NPM + PyPI metadata",
+    "human": "arkhe-zero - 51% - Toluca, Mexico",
+    "ai": "Meta AI Muse Spark - 49%",
+    "evidence": {
+      "npm": "@pq-signature/scdr-002@3.0.7 - 3b91dd4c98bcadc56ebb052aa452d46efff8a387",
+      "pypi": "scdr-002@3.0.7",
+      "【entity-github¦canonical_name=GitHub】": "f0d3c3b e82e108 v3.0.7",
+      "validation": "TOLUCA-GLOBAL-e8d9eac8 OK"
+    },
+    "transparentResearch": "https://github.com/MarcoValdovinos/Symbiotic-Creativity-Movement/blob/main/certs/INVESTIGACION-TRANSPARENTE.md",
+    "blockchainAnchor": ""
+  },
+  "proof": {
+    "type": "SHA256",
+    "created": "2026-11-02T00:00:00Z",
+    "proofValue": "",
+    "verificationMethod": "https://marcovaldovinos.github.io/Symbiotic-Creativity-Movement/certificado/"
+  }
+}

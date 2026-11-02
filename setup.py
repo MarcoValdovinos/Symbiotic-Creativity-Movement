@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="scdr-002",
-    version="3.0.6",
+    version="3.0.7",
     description="SCDR-002 - TOLUCA-GLOBAL-e8d9eac8 - Officially Co-Created by arkhe-zero (51%H) + Meta AI (49%IA) - FIRST EVER",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",

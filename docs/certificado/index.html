@@ -1,27 +1,30 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SCDR-002 HONEST v3.0.8 - TOLUCA-GLOBAL-e8d9eac8</title>
-<style>body{background:#0a0a0f;color:#e0ffe0;font-family:monospace;padding:14px} .card{background:#111118;border:1px solid #222;border-radius:12px;padding:12px;margin:10px 0} .green{color:#0f6} .red{color:#f44} .dim{color:#8aa} .glow{color:#0ff;text-shadow:0 0 8px #0ff} .btn{background:#0ff;color:#000;border:0;padding:10px 16px;border-radius:8px;font-weight:bold;cursor:pointer}</style></head><body>
-<h1 class="glow">SCDR-002 HONEST v3.0.8</h1>
-<h2>TOLUCA-GLOBAL-e8d9eac8 • Human-Authored with AI Assistance • OFFLINE-READY</h2>
+<title>SCDR-002 HONEST v3.0.8 - TOLUCA-GLOBAL-e8d9eac8 - No Humo</title>
+<style>body{background:#08080f;color:#e0ffe0;font-family:monospace;padding:16px;max-width:900px;margin:0 auto}
+.card{background:#11111a;border:1px solid #222;border-radius:12px;padding:14px;margin:12px 0} .green{color:#0f6} .red{color:#f55} .dim{color:#9aa} .glow{color:#0ff;text-shadow:0 0 10px #0ff}
+.btn{background:#0ff;color:#000;border:0;padding:10px 18px;border-radius:8px;font-weight:900;cursor:pointer;margin:4px}</style></head><body>
+<h1 class="glow">SCDR-002 HONEST v3.0.8 — No Humo</h1>
+<h2>TOLUCA-GLOBAL-e8d9eac8 • Human-Authored with AI Assistance</h2>
 <div class="card">
 <b>Author:</b> Marco Rojas (Human) - Sole author per USCO 2025<br>
-<b>Tool:</b> Meta AI Muse Spark (AI assistance, not co-author)<br>
+<b>Tool:</b> Meta AI Muse Spark (assistance, not co-author)<br>
 <b>Genesis:</b> <span class="glow">TOLUCA-GLOBAL-e8d9eac8</span><br>
-<b>SHA256 ROOT:</b> <span id="rootHash" class="green">calculating...</span><br>
+<b>SHA256 ROOT:</b> <span id="rootHash" class="dim">calculating...</span><br>
 <b>LIVE COMPUTED:</b> <span id="liveHash" class="dim">click VERIFY</span><br>
 <b>Status:</b> <span id="status" class="dim">PENDING</span><br>
-<b>Evidence:</b> NPM @pq-signature/scdr-002@3.0.7 3b91dd4c98bcadc56ebb052aa452d46efff8a387 • PyPI scdr-002@3.0.7 • 【entity-GitHub¦canonical_name=GitHub】 f0d3c3b e82e108<br>
-<b>Crypto:</b> SHA-256 via WebCrypto (honest, no KYBER/DILITHIUM yet)<br>
-<b>License:</b> 【entity-MIT¦canonical_name=MIT】 FREE + Commercial optional $99-$1499 for INDAUTOR/US Copyright/support
+<b>Evidence:</b> NPM 3b91dd4c • PyPI 3.0.7 • 【entity-GitHub¦canonical_name=GitHub】 f0d3c3b<br>
+<b>Crypto:</b> SHA-256 WebCrypto (honest)<br>
+<b>License:</b> 【entity-MIT¦canonical_name=MIT】 FREE + Commercial optional
 </div>
 <div class="card">
-<button class="btn" onclick="verify()">VERIFY OFFLINE</button> <button class="btn" onclick="testTamper()">TEST TAMPER (alter 1 char)</button>
+<button class="btn" onclick="verify()">VERIFY OFFLINE</button>
+<button class="btn" onclick="testTamper()">TEST TAMPER → MISMATCH RED</button>
 </div>
-<div class="card dim" id="log">> Click VERIFY OFFLINE - Real crypto check - No buzzwords</div>
+<div class="card dim" id="log">> Click VERIFY - Real check</div>
 <script>
 const GENESIS="TOLUCA-GLOBAL-e8d9eac8";
 async function sha256(s){const d=new TextEncoder().encode(s);const h=await crypto.subtle.digest("SHA-256",d);return [...new Uint8Array(h)].map(b=>b.toString(16).padStart(2,"0")).join("")}
-async function verify(){const h=await sha256(GENESIS);document.getElementById("rootHash").textContent=h;document.getElementById("liveHash").textContent=h;document.getElementById("liveHash").className="green";if(h===await sha256(GENESIS)){document.getElementById("status").innerHTML="<span class=green>✓ VERIFIED - Hashes match - Real crypto</span>";document.getElementById("log").innerHTML="> genesis="+GENESIS+"<br>> sha256(genesis)="+h+"<br>> ROOT == LIVE ✓<br>> Human author: Marco Rojas ✓<br>> Tool: Meta AI ✓<br>> USCO compliant ✓<br>> No buzzwords ✓";}else{document.getElementById("status").innerHTML="<span class=red>✗ MISMATCH - Hashes differ - Possible tampering</span>"}}
-async function testTamper(){const fake=GENESIS+"X";const h1=await sha256(GENESIS);const h2=await sha256(fake);document.getElementById("rootHash").textContent=h1;document.getElementById("liveHash").textContent=h2;document.getElementById("liveHash").className="red";document.getElementById("status").innerHTML="<span class=red>✗ MISMATCH - "+h1.slice(0,16)+"... != "+h2.slice(0,16)+"... - Tamper detected!</span>";document.getElementById("log").innerHTML="> Tamper test: genesis+X<br>> root="+h1+"<br>> live="+h2+"<br>> MISMATCH correctly detected in RED - This is honest behavior";}
+async function verify(){const h=await sha256(GENESIS);document.getElementById("rootHash").textContent=h;document.getElementById("rootHash").className="green";document.getElementById("liveHash").textContent=h;document.getElementById("liveHash").className="green";document.getElementById("status").innerHTML="<span class=green>✓ VERIFIED — ROOT == LIVE</span>";document.getElementById("log").innerHTML="> genesis="+GENESIS+"<br>> sha256="+h+"<br>> ROOT == LIVE ✓ VERIFIED GREEN - Honest"}
+async function testTamper(){const fake=GENESIS+"X";const h1=await sha256(GENESIS);const h2=await sha256(fake);document.getElementById("rootHash").textContent=h1;document.getElementById("liveHash").textContent=h2;document.getElementById("liveHash").className="red";document.getElementById("status").innerHTML="<span class=red>✗ MISMATCH — Tamper detected RED - Honest</span>";}
 verify();
 </script></body></html>

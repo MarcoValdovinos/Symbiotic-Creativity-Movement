@@ -1,32 +1,17 @@
 {
   "genesis": "TOLUCA-GLOBAL-e8d9eac8",
-  "sha256": "073b92245ee9a1f172f785f7b7de07ae988f32b7148387820cecca202ffec9e9",
+  "genesis_sha256": "073b92245ee9a1f172f785f7b7de07ae988f32b7148387820cecca202ffec9e9",
+  "origin": "Toluca, Mexico - Solo Dev - 51%H 49%AI - Termux Android",
   "nodes": [
-    {
-      "id": "toluca-origin-001",
-      "location": "Toluca, Mexico 19.2826,-99.6557",
-      "type": "Termux Android",
-      "status": "ONLINE",
-      "proof": "Git commit 0f35278 + Bitcoin tx 4d9635...",
-      "real": true
-    },
-    {
-      "id": "github-pages-cdn",
-      "location": "GitHub CDN Global",
-      "type": "Pages + Actions",
-      "status": "ONLINE",
-      "proof": "https://marcovaldovinos.github.io/Symbiotic-Creativity-Movement/",
-      "real": true
-    },
-    {
-      "id": "bitcoin-anchor",
-      "location": "Bitcoin Blockchain",
-      "type": "OpenTimestamps",
-      "status": "PENDING 6 confs",
-      "proof": "tx 4d963512bc0f6d151fe7c56a4a4e4eb1e70ec0347c50769a0adece15bbf00fb3",
-      "real": true
-    }
+    {"id": "toluca-termux", "commit": "0f35278", "type": "origin", "location": "Toluca", "verified": true},
+    {"id": "github-pages-cdn", "url": "https://marcovaldovinos.github.io/Symbiotic-Creativity-Movement/", "type": "cdn", "verified": true},
+    {"id": "github-actions", "run": "41496608891", "type": "ci", "verified": true},
+    {"id": "bitcoin-ots", "tx": "4d963512bc0f6d151fe7c56a4a4e4eb1e70ec0347c50769a0adece15bbf00fb3", "block": 974317, "merkle": "497d46982db9f9c92d2555673ad62bf104f8a9669897f05ca0bc68e8afac55bf", "confirmations": 59934, "type": "bitcoin", "verified": true, "ots_size": "4.2K"},
+    {"id": "npm-registry", "package": "@pq-signature/scdr-002@3.0.7", "shasum": "3b91dd4c", "type": "npm", "verified": true},
+    {"id": "toluca-launcher", "sha256": "73566ffc5509bb47158f82d8a168931ed271479b0719b8e6449019f43415ae3c", "type": "launcher", "location": "Bus Toluca-CDMX 23:47", "verified": true}
   ],
-  "total_real_nodes": 3,
-  "fake_nodes": 0
+  "total_real": 6,
+  "fake_claimed_before": 128,
+  "status": "HONEST - PRESIDENCIAL - KRMV-KRONOS-0000005 VERDE 0",
+  "last_sync": "2026-02-14T23:47:00Z - Block 1034251 - Delta 59934"
 }

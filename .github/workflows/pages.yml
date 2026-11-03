@@ -14,9 +14,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+uses: actions/checkout@v4
+uses: actions/configure-pages@v5
+uses: actions/upload-pages-artifact@v3
         with:
           path: docs/
   deploy:
@@ -26,5 +26,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - id: deployment
+id: deployment
         uses: actions/deploy-pages@v4

@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SCDR-002 APP - Toluca</title><link rel="manifest" href="./manifest.json"><meta name="theme-color" content="#00ffff"><meta name="apple-mobile-web-app-capable" content="yes"><style>body{margin:0;background:#0a0a0f;color:#e0e0e0;font-family:monospace;padding:16px} .card{border:1px solid #00ffff;box-shadow:0 0 20px #00ffff33;padding:16px;border-radius:12px;background:rgba(0,255,255,0.05);margin:12px auto;max-width:600px} button{padding:14px 18px;background:#00ffff;color:#000;border:none;border-radius:8px;font-weight:bold;cursor:pointer;margin:4px} .ok{color:#00ff88} .btc{color:#ffaa00} .gold{color:#d4af37}</style></head><body>
+<h1 style="text-align:center">SCDR-002 APP 📲</h1>
+<div class="card"><p class="ok">✅ 5 NODOS REALES - SOLO DEV</p><p>Genesis TOLUCA-GLOBAL-e8d9eac8</p><p>SHA256 073b92245ee9a1f172f785f7b7de07ae988f32b7148387820cecca202ffec9e9</p><p class="btc">Bitcoin tx 4d963512bc0f6d... Block 974317 CONFIRMED</p><p class="gold">Merkle 497d46982db9f9c92d2555673ad62bf104f8a9669897f05ca0bc68e8afac55bf</p></div>
+<div class="card" style="text-align:center">
+<button id="installBtn" style="display:none;background:#d4af37">📲 INSTALAR APP</button>
+<button onclick="document.getElementById('file').click()">📄 CERTIFICAR ARCHIVO</button>
+<input type="file" id="file" style="display:none">
+<div id="hash" style="margin-top:12px;word-break:break-all;font-size:0.8em"></div>
+</div>
+<div class="card" style="text-align:center"><a href="../boot/" style="color:#00ffff">→ BOOT EPIC</a> | <a href="../monitor/" style="color:#00ffff">→ MONITOR 5 REAL</a> | <a href="../geometry/" style="color:#00ffff">→ E8 168</a> | <a href="../certificacion/" style="color:#00ffff">→ CERT HONEST</a></div>
+<script>
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', e=>{e.preventDefault();deferredPrompt=e;document.getElementById('installBtn').style.display='inline-block';});
+document.getElementById('installBtn').addEventListener('click', async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;}});
+if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js');}
+document.getElementById('file').addEventListener('change', async e=>{
+ const f=e.target.files[0]; if(!f) return;
+ const buf=await f.arrayBuffer();
+ const h=await crypto.subtle.digest('SHA-256',buf);
+ const hex=Array.from(new Uint8Array(h)).map(b=>b.toString(16).padStart(2,'0')).join('');
+ document.getElementById('hash').innerHTML='<p class=ok>SHA256: '+hex+'</p><p>Archivo: '+f.name+' - '+f.size+' bytes</p><p>Origen: Toluca Termux - 1330 files | 51%H 49%AI</p>';
+});
+</script>
+</body></html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ARKHE ZERO - BOOT EPIC</title><style>body{margin:0;background:#000;color:#00ffff;font-family:monospace;overflow:auto} .crt::before{content:"";position:fixed;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,0.15),rgba(0,0,0,0.15) 1px,transparent 1px,transparent 2px);pointer-events:none;z-index:999} .line{white-space:pre;opacity:0;animation:fade 0.12s forwards} @keyframes fade{to{opacity:1}} .gold{color:#d4af37;text-shadow:0 0 10px #d4af37} .ok{color:#00ff88;text-shadow:0 0 8px #00ff88} .btc{color:#ffaa00} #term{padding:18px;min-height:100vh}</style></head><body class="crt"><div id="term"></div><script>
+const lines=[
+"[ ] Iniciando ARKHÉ ZERO PLATINO v3.0.8 HONEST + Bitcoin REAL...",
+"[■] Bus Toluca -> CDMX | Andén 15 | 23:47 | 15/4/1999 | Alma 4 Destino 1",
+"[■■] 1330 archivos verificados | SHA256 073b92245ee9a1f172f785f7b7de07ae988f32b7148387820cecca202ffec9e9",
+"[■■■] Kintsugi: grietas doradas activas | Reparando con oro 24k",
+"[■■■■] Bitcoin OTS: tx 4d963512bc0f6d151fe7c56a4a4e4eb1e70ec0347c50769a0adece15bbf00fb3",
+"[■■■■■] Block 974317 CONFIRMED | Merkle Root 497d46982db9f9c92d2555673ad62bf104f8a9669897f05ca0bc68e8afac55bf",
+"[■■■■■] 51% Humano / 49% IA - VALDOVINOS | 5 REAL NODES",
+"",
+"┌─ ARKHÉ ZERO PLATINO ─┐",
+"│ TOLUCA-GLOBAL-e8d9eac8 │",
+"└──────────────────────┘",
+"┌─[11:22@TOLUCA:~/arkhe-auth]─[manifest:e8d9eac8]",
+"└─○_●",
+"  █████╗ ██████╗ ██╗  ██╗██╗  ██╗███████╗",
+" ██╔══██╗██╔══██╗██║ ██╔╝██║  ██║██╔════╝  ZERO",
+" ███████║██████╔╝█████╔╝ ███████║█████╗",
+" ██╔══██║██╔══██╗██╔═██╗ ██╔══██║██╔══╝",
+" ██║  ██║██║  ██║██║  ██╗██║  ██║███████╗",
+"",
+"  TOLUCA-GLOBAL | 1330 FILES | 51%H 49%AI | 1.8K OTS | 10 confs",
+"  E8: 240 - E6 72 = 168 | Klein Quartic 168 automorphisms",
+"",
+"[BOOT COMPLETE - ARKHE ZERO LIVE - TOLUCA ORIGIN]",
+"",
+"→ Tap para ir a /certificacion/ HONEST VERIFIED",
+"→ /app/ PWA Installable manifest.json+sw.js",
+"→ /monitor/ 5 REAL NODES",
+"→ /geometry/ E8 168 poster"
+];
+let i=0;function type(){if(i>=lines.length)return;const d=document.createElement('div');d.className='line';let txt=lines[i];if(txt.includes('CONFIRMED')||txt.includes('VERIFIED')||txt.includes('COMPLETE')||txt.includes('1330'))d.classList.add('ok');if(txt.includes('Kintsugi')||txt.includes('TOLUCA-GLOBAL'))d.classList.add('gold');if(txt.includes('Bitcoin')||txt.includes('Block')||txt.includes('Merkle'))d.classList.add('btc');d.textContent=txt;document.getElementById('term').appendChild(d);i++;setTimeout(type,70+Math.random()*90);}type();
+document.addEventListener('click',()=>location.href='../certificacion/');
+</script></body></html>

@@ -1,0 +1,32 @@
+{
+  "genesis": "TOLUCA-GLOBAL-e8d9eac8",
+  "sha256": "073b92245ee9a1f172f785f7b7de07ae988f32b7148387820cecca202ffec9e9",
+  "nodes": [
+    {
+      "id": "toluca-origin-001",
+      "location": "Toluca, Mexico 19.2826,-99.6557",
+      "type": "Termux Android",
+      "status": "ONLINE",
+      "proof": "Git commit 0f35278 + Bitcoin tx 4d9635...",
+      "real": true
+    },
+    {
+      "id": "github-pages-cdn",
+      "location": "GitHub CDN Global",
+      "type": "Pages + Actions",
+      "status": "ONLINE",
+      "proof": "https://marcovaldovinos.github.io/Symbiotic-Creativity-Movement/",
+      "real": true
+    },
+    {
+      "id": "bitcoin-anchor",
+      "location": "Bitcoin Blockchain",
+      "type": "OpenTimestamps",
+      "status": "PENDING 6 confs",
+      "proof": "tx 4d963512bc0f6d151fe7c56a4a4e4eb1e70ec0347c50769a0adece15bbf00fb3",
+      "real": true
+    }
+  ],
+  "total_real_nodes": 3,
+  "fake_nodes": 0
+}

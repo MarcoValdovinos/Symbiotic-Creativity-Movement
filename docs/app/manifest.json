@@ -1,18 +1,11 @@
 {
   "name": "SCDR-002 - ARKHE ZERO - Toluca Origin",
   "short_name": "SCDR-002",
-  "description": "Bitcoin-anchored certification - 5 real nodes - Solo Dev - 51%H 49%AI - Genesis TOLUCA-GLOBAL-e8d9eac8",
+  "description": "Bitcoin-anchored certification - Block 974317 - 5 real nodes - 51%H 49%AI - TOLUCA-GLOBAL-e8d9eac8",
   "start_url": "/Symbiotic-Creativity-Movement/app/",
   "display": "standalone",
   "background_color": "#0a0a0f",
   "theme_color": "#00ffff",
   "orientation": "portrait",
-  "icons": [
-    {
-      "src": "data:image/svg+xml;base64,[STRIPPED]",
-      "sizes": "512x512",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ]
+  "icons": [{"src": "data:image/svg+xml,[STRIPPED]//www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' fill='%230a0a0f'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='180' fill='%2300ffff'>◯_●</text></svg>", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable"}]
 }
